@@ -4404,7 +4404,7 @@ body {
 // Move to Top
 #button {
   display: inline-block;
-  background-color: #FF9800;
+  background-color: #504a42;
   width: 4vw;
   height: 4vw;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -4418,18 +4418,12 @@ body {
   opacity: 0;
   visibility: hidden;
   z-index: 50000;
-}
-#button::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2vw;
-  line-height: 3.6vw;
-  color: $cream;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  i {
+    font-size: 3vw;
+    color: $cream;
+    padding-top: .3vw;
+  }
 }
 #button:hover {
   cursor: pointer;
@@ -4448,6 +4442,12 @@ body {
     height: 11vw;
     bottom: 5vw;
     right: 5vw;
+      
+    i {
+      font-size: 8vw;
+      color: $cream;
+      padding-top: 1vw;
+    }
   }
 
   #button::after {

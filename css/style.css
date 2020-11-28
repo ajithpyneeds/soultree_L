@@ -4829,7 +4829,7 @@ body {
 
 #button {
   display: inline-block;
-  background-color: #FF9800;
+  background-color: #504a42;
   width: 4vw;
   height: 4vw;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -4846,23 +4846,10 @@ body {
   z-index: 50000;
 }
 
-#button::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2vw;
-  line-height: 3.6vw;
+#button i {
+  font-size: 3vw;
   color: #e8e3db;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-top: .3vw;
 }
 
 #button:hover {
@@ -4885,6 +4872,11 @@ body {
     height: 11vw;
     bottom: 5vw;
     right: 5vw;
+  }
+  #button i {
+    font-size: 8vw;
+    color: #e8e3db;
+    padding-top: 1vw;
   }
   #button::after {
     font-size: 4.5vw;
