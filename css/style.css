@@ -2438,6 +2438,13 @@ body {
   font-weight: 600;
 }
 
+.floor-plans .planView select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+
 .floor-plans .planView select::-ms-expand {
   display: none;
 }
@@ -2458,6 +2465,9 @@ body {
   border: 1px solid;
   font-size: 1.2vw;
   font-weight: 300;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
   outline: none;
 }
 
@@ -2638,7 +2648,12 @@ body {
     margin-bottom: 1.2vw;
     font-weight: 600;
   }
-  
+  .floor-plans .planView select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+  }
   .floor-plans .planView select::-ms-expand {
     display: none;
   }
@@ -2657,6 +2672,9 @@ body {
     border: 1px solid;
     font-size: 3.38vw;
     font-weight: 300;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
     outline: none;
   }
   .floor-plans .planView .box11::before {
